@@ -4,7 +4,7 @@ let app = express()
 
 const PORT = 3000
 
-app.get('/testapi', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ 'status': 200, 'message': 'success' })
 })
 
