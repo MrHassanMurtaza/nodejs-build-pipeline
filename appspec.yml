@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/deployuser/
+    destination: /opt/
 hooks:
   AfterInstall:
     - location: scripts/app_start.sh
       timeout: 200
-      runas: deployuser
+      runas: root
